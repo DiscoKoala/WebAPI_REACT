@@ -52,6 +52,7 @@ class Login extends Component {
 
 const mapStateToProps = state => {
     return {
+        users: state.details.users
     }
 }
 
