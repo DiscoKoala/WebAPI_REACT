@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === 'development') {
     middlewares.push(logger);
 }
 
-const store = createStore(
+const store = configureStore(
     combineReducers( {
         auth: authReducer,
         movie: movieReducer
