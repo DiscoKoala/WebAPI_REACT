@@ -1,4 +1,5 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
+import {combineReducers, applyMiddleware } from 'redux';
+import { configureStore } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
 import authReducer from "../reducers/authReducer";
 import movieReducer from "../reducers/movieReducer";
