@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
 import MovieHeader from './components/movieheader';
 import MovieList from './components/movielist';
@@ -9,16 +9,6 @@ import { Provider } from 'react-redux';
 import store from './stores/store';
 
 function App() {  
-  const [movies, setMovies] = useState([
-    {
-      _id: "6445edefc87dfc003f679b09",
-      title: "Paddington Bear",
-      releaseDate: "January 16, 2015",
-      genre: "Comedy",
-      imageURL: "https://m.media-amazon.com/images/M/MV5BMTAxOTMwOTkwNDZeQTJeQWpwZ15BbWU4MDEyMTI1NjMx._V1_.jpg"
-
-    }
-  ])
   return (
     <div className="App">
       <Provider store={store}>
