@@ -9,14 +9,14 @@ import MovieDetail from "../components/moviedetail"
 function Movie(props) {
     const [selectedMovie] = useState(props.selectedMovie);
     const params = useParams();
-    const movieId = params.title;
-    console.log(movieId);
+    const title = params.title;
+    console.log(title);
     const dispatch = useDispatch();
     if (selectedMovie == null) {
-        dispatch(fetchMovie(movieId));
+        dispatch(fetchMovie(title));
     }
 
-    return (<MovieDetail movieId={movieId} />)
+    return (<MovieDetail movieId={title} />)
 }
 
 export default Movie;
