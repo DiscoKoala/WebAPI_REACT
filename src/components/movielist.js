@@ -28,6 +28,7 @@ class MovieList extends Component {
         dispatch(setMovie(movie));
     }
 
+
     render() {
         const MovieListCarousel = ({movieList}) => {
             if (!movieList) {
